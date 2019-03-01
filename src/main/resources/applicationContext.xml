@@ -10,7 +10,7 @@
 		http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <bean id="configurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <!--<bean id="configurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
                 <value>classpath:jdbc.properties</value>
@@ -18,7 +18,7 @@
             </list>
         </property>
         <property name="fileEncoding" value="UTF-8"></property>
-    </bean>
+    </bean>-->
     <!-- 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入 -->
     <context:component-scan base-package="szh">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
