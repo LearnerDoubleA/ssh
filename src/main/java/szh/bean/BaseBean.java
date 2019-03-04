@@ -16,6 +16,8 @@ public class BaseBean implements Serializable {
     @GenericGenerator(name="system-uuid",strategy="uuid")
     private Long id;
 
+    private String uid;
+
     private Calendar addtime;
 
     private Calendar updatetime;
@@ -28,6 +30,14 @@ public class BaseBean implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
     public Calendar getAddtime() {
