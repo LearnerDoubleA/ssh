@@ -13,9 +13,10 @@ import java.util.Calendar;
 public class BaseBean implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @GenericGenerator(name="system-uuid",strategy="uuid")
+    //@GenericGenerator(name="system-uuid",strategy="uuid")
     private Long id;
 
+    @GenericGenerator(name="system-uuid",strategy="uuid")
     private String uid;
 
     private Calendar addtime;
